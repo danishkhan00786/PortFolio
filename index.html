@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Danish's Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <div class="logo">Danish</div>
+  <nav>
+    <ul id="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <button id="darkModeToggle">🌙 Dark Mode</button>
+  <div class="hamburger" id="hamburger">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</header>
+
+<section class="hero" id="hero">
+  <h1>Hi, I'm Danish</h1>
+  <p>I'm a web developer specializing in modern, responsive websites and apps.</p>
+  <button class="btn-primary" onclick="document.getElementById('contact').scrollIntoView()">Get In Touch</button>
+</section>
+
+<section id="about">
+  <h2>About Me</h2>
+  <img src="danish001.jpg" alt="Danish Profile Picture" />
+  <div class="text">
+    <p>
+      Passionate about building scalable and beautiful web applications with a focus on user experience. Skilled in HTML, CSS, JavaScript, and always eager to learn new technologies.
+    </p>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills-grid">
+    <div class="skill-item">
+      <img src="python-programming-language.webp" alt="Python" class="skill-icon" />
+      <div class="skill-label">Python</div>
+    </div>
+    <div class="skill-item">
+      <img src="html.jpg" alt="HTML" class="skill-icon" />
+      <div class="skill-label">HTML</div>
+    </div>
+    <div class="skill-item">
+      <img src="css.jpg" alt="CSS" class="skill-icon" />
+      <div class="skill-label">CSS</div>
+    </div>
+    <div class="skill-item">
+      <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="JavaScript" class="skill-icon" />
+      <div class="skill-label">JavaScript</div>
+    </div>
+    <div class="skill-item">
+      <img src="https://cdn-icons-png.flaticon.com/512/919/919851.png" alt="React" class="skill-icon" />
+      <div class="skill-label">React</div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="projects-grid">
+    <div class="project-card">
+      <img src="https://via.placeholder.com/350x200" alt="Project 1" class="project-image" />
+      <div class="project-content">
+        <div class="project-title">Personal Portfolio</div>
+        <div class="project-desc">A responsive portfolio website built with HTML, CSS, and JavaScript.</div>
+        <button class="project-btn" onclick="window.open('https://github.com/danish/portfolio', '_blank')">View Code</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact Me</h2>
+  <form id="contact-form">
+    <input type="text" id="name" placeholder="Your Name" required />
+    <input type="email" id="email" placeholder="Your Email" required />
+    <textarea id="message" placeholder="Your Message" required></textarea>
+    <button type="submit">Send</button>
+  </form>
+</section>
+
+<footer>
+  &copy; 2025 Danish. All rights reserved.
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
